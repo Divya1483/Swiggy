@@ -41,7 +41,7 @@ class MyUser(AbstractBaseUser):
         max_length=255,
         unique=True,
     )
-    mobile_name = models.IntegerField(max_length=10, null= True)
+    mobile_number = models.IntegerField(max_length=10, null= True)
     otp = models.IntegerField(max_length=6, null= True)
     otp_verify = models.BooleanField(default=False)
     otp_expire = models.DateTimeField(null=True , blank=True)
